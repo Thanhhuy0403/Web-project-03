@@ -20,8 +20,9 @@ a{
     text-decoration: none;
 }
 
-.content{
+.container{
     width: 1170px;
+    max-width: calc(100% - 48px);
     margin-left: auto;
     margin-right: auto;
 }
@@ -47,11 +48,15 @@ a{
 
 /* ======================== Header ========================*/
 .header{
+    z-index: 1;
+    top: -25px;
+    position: sticky;
     padding-top: 36px;
+    padding-bottom: 10px;
     background: #10375C;
 }
 
-.header .content{
+.header .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -169,7 +174,7 @@ a{
     line-height: 166.667%; /* 166.667% */
 }
 
-.hero-header .content{
+.hero-header .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -411,7 +416,7 @@ a{
     margin-top: 170px;
 }
 
-.feature .content{
+.feature .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -558,7 +563,7 @@ a{
     margin-top: 265px;
 }
 
-.install-app .content{
+.install-app .container{
     border-radius: 4px;
     background: #2E80CE;
     position: relative;
@@ -606,7 +611,7 @@ a{
     margin-top: 170px;
 }
 
-.event .content{
+.event .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -729,7 +734,7 @@ a{
     margin-top: 170px;
 }
 
-.appointment .content{
+.appointment .container{
     background: #F6FBFF;
     padding-bottom: 100px;
 }
@@ -783,7 +788,7 @@ a{
     background: #10375C;
 }
 
-.footer .content{
+.footer .container{
     padding-top: 100px;
 }
 
