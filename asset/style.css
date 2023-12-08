@@ -494,7 +494,7 @@ a{
     justify-content: space-between;
 }
 
-.virtual .list-item .item > img{
+/* .virtual .list-item .item > img{
     display: inline-block;
     width: 262px;
     height: 290px;
@@ -503,11 +503,22 @@ a{
     border-radius: 6px;
     background: #EAF6FF;
     padding: 28px 4px 0px 4px;
+} */
+
+.virtual .item .image{
+    width: 270px;
+    height: 318px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: #EAF6FF;
+    padding-top: 28px;
+    overflow: hidden;
 }
 
-.virtual .list-item .item > img:hover{
+.virtual .list-item .item .image:hover img{
     transform: scale(1.1);
     transition: 0.4s;
+    cursor: pointer;
 }
 
 .virtual .item{
@@ -673,11 +684,19 @@ a{
     overflow: hidden;
 }
 
-.event .list-item .item > img{
+.event .list-item .item .image{
+    width: 270px;
+    height: 172px;
+    flex-shrink: 0;
+    border-radius: 12px 12px 0px 0px;
+    background: url(<path-to-image>), lightgray -2px -4.032px / 100.741% 104.688% no-repeat;
+    overflow: hidden;
+}
+
+.event .list-item .item .image img{
     display: block;
     width: 270px;
     height: 172px;
-    overflow: hidden;
     flex-shrink: 0;
     background: url(<path-to-image>), lightgray -2px -4.032px / 100.741% 104.688% no-repeat;
 }
@@ -884,6 +903,75 @@ a{
     font-weight: 400;
     line-height: 185.714%; /* 185.714% */
 }
+
+.footer .action{
+    display: flex;
+    gap: 12px;
+}
+
+.footer .action input{
+    width: 212px;
+    height: 46px;
+    border-radius: 4px;
+    border: 1px solid #406181;
+    background-color: transparent;
+    outline: none;
+
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 185.714%;
+    padding: 10px;
+}
+
+.footer .action input::placeholder{
+    color: #9CA8B1;
+    font-family: Open Sans;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 185.714%; /* 185.714% */   
+}
+
+.footer .action .btn{
+    width: 108px;
+    padding: 9px 14px;
+    border-radius: 4px;
+    background: #2E80CE;
+
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 185.714%;
+}
+
+.footer .container > .desc{
+    position: relative;
+    color: #AAB3BA;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 185.714%; /* 185.714% */   
+    padding-top: 57px;
+    padding-bottom: 42px;
+}
+
+.footer .container > .desc::before{
+    position: absolute;
+    content: "";
+    width: 1170px;
+    height: 1px;
+    flex-shrink: 0;
+    background-color: #406181;
+    top: 28px;
+    left: 0;
+}
+
+
+
+
 
 
 
