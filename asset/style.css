@@ -491,19 +491,9 @@ a{
 .virtual .list-item{
     margin-top: 70px;
     display: flex;
+    gap: 30px;
     justify-content: space-between;
 }
-
-/* .virtual .list-item .item > img{
-    display: inline-block;
-    width: 262px;
-    height: 290px;
-    overflow: hidden;
-    flex-shrink: 0;
-    border-radius: 6px;
-    background: #EAF6FF;
-    padding: 28px 4px 0px 4px;
-} */
 
 .virtual .item .image{
     width: 270px;
