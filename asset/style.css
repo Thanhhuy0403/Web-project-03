@@ -93,6 +93,7 @@ a{
 }
 
 .header .navbar > a:hover{
+    transition: 0.1s;
     color: #FFF;
     text-align: center;
     font-size: 1.6rem;
@@ -284,6 +285,7 @@ a{
 }
 
 .services .row .item .sub-desc:hover{
+    transition: 0.3s;
     background-color: rgb(150, 206, 243);
 }
 
@@ -296,16 +298,19 @@ a{
 }
 
 .services .row .item:hover{
+    transition: 0.4s;
     border-radius: 10px;
     background: #FFF;
     box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
 }
 
 .services .row .item:hover .teeth{
+    transition: 0.4s;
     fill: #2E80CE;
 }
 
 .services .row .item:hover .tooth{
+    transition: 0.4s;
     fill: #FFFFFF !important;
 }
 
@@ -386,6 +391,7 @@ a{
 }
 
 .Work .item:hover{
+    transition: 0.2s;
     border-radius: 4px;
     border: solid 16px #2E80CE;
     margin-bottom: 16px;
@@ -393,6 +399,7 @@ a{
 }
 
 .Work .item:hover a{
+    transition: 0.2s;
     color: #2E80CE;
     font-size: 1.6rem;
     font-weight: 400;
@@ -483,17 +490,27 @@ a{
 }
 
 .virtual .list-item .item > img{
+    display: inline-block;
     width: 262px;
     height: 290px;
+    overflow: hidden;
     flex-shrink: 0;
     border-radius: 6px;
     background: #EAF6FF;
     padding: 28px 4px 0px 4px;
 }
 
+.virtual .list-item .item > img:hover{
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
 .virtual .item{
     display: flex;
     flex-direction: column;
+    width: 270px;
+    height: 384px;
+    overflow: hidden;
 }
 
 .virtual .item .name{
@@ -522,14 +539,17 @@ a{
 }
 
 .virtual .action svg:hover path{
+    transition: 0.3s;
     stroke: #FFF;
 }
 
 .virtual .action svg:hover circle{
+    transition: 0.3s;
     stroke: none;
 }
 
 .virtual .action svg:hover{
+    transition: 0.3s;
     fill: #2E80CE;
 }
 
@@ -645,13 +665,15 @@ a{
     border-radius: 12px;
     border: 1px solid #E8EBEE;
     background: #FFF;
+    overflow: hidden;
 }
 
 .event .list-item .item > img{
+    display: block;
     width: 270px;
     height: 172px;
+    overflow: hidden;
     flex-shrink: 0;
-    border-radius: 12px 12px 0px 0px;
     background: url(<path-to-image>), lightgray -2px -4.032px / 100.741% 104.688% no-repeat;
 }
 
@@ -688,6 +710,11 @@ a{
     background: #FFF;
     box-shadow: 0px 18px 50px 0px rgba(0, 0, 0, 0.05);
     border: none;
+}
+
+.event .list-item .item:hover img{
+    transform: scale(1.1);
+    transition: 0.4s;
 }
 
 .event .list-item .item:hover a{
@@ -752,10 +779,8 @@ a{
 
 /* ======================== Footer ========================*/
 .footer{
-    margin-bottom: 500px;
     margin-top: 170px;
     background: #10375C;
-    height: 700px;
 }
 
 .footer .content{
@@ -814,6 +839,11 @@ a{
     line-height: 185.714%; /* 185.714% */
 }
 
+.footer .element a:hover{
+    transition: 0.4s;
+    text-decoration: underline;
+}
+
 .footer .item-4 > p{
     color: #FFF;
     font-family: Open Sans;
@@ -824,7 +854,7 @@ a{
 
 .footer .item-4 .element{
     margin-top: 20px;
-    margin-bottom: 28px;
+    margin-bottom: 20px;
 }
 
 .footer .item-4 .element a{
@@ -832,10 +862,12 @@ a{
 }
 
 .footer .item-4 .element a:hover circle{
+    transition: 0.3s;
     fill: #2e80ce;
 }
 
 .footer .item-4 .element a:hover path{
+    transition: 0.3s;
     fill: #FFF;
 }
 
